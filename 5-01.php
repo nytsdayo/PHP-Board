@@ -1,5 +1,6 @@
 <?php
 //DB接続用関数
+require 'config.php';
 function db_connect(){
     $mysqli = new mysqli('localhost', 'DBUser', 'DBPass', 'DBName');
     if ($mysqli->connect_error) {
